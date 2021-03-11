@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from '../app-routing.module';
 import { CustomersComponent } from '../customers/customers.component';
 import { CustomersListComponent } from './customers-list/customers-list.component';
+import { FilterTextboxComponent } from './customers-list/filter-textbox.component';
 
 @NgModule({
   declarations: [
     CustomersComponent,
-    CustomersListComponent
+    CustomersListComponent,
+    FilterTextboxComponent
   ],
   imports: [
     CommonModule,
