@@ -10,7 +10,7 @@ export class CustomersListComponent implements OnInit {
 
     filteredCustomers: any[] = [];
     customersOrderTotal!: number;
-    currencyCode: string = 'USD';
+    currencyCode: string = 'GBP';
 
     constructor() {}
 
@@ -28,5 +28,9 @@ export class CustomersListComponent implements OnInit {
         this.filteredCustomers.forEach((cust: ICustomer) => {
             this.customersOrderTotal += cust.orderTotal!;
         });
+    }
+
+    sort(prop: string) {
+        // A sorter service will handle the sorting
     }
 }
