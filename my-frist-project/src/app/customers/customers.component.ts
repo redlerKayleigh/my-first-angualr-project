@@ -7,8 +7,8 @@ import { ICustomer } from '../shared/interfaces';
   styleUrls: ['./customers.component.scss']
 })
 export class CustomersComponent implements OnInit {
-  titleCustomers: string | undefined;
-  people: ICustomer[] | undefined;
+  titleCustomers!: string;
+  people!: ICustomer[];
 
   constructor() {}
 
